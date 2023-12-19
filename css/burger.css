@@ -1,0 +1,53 @@
+:root {
+    --backgr: #FFFAE9;
+    --text: #2E2618;
+    --darkgr: #203426;
+    --green: #4F6932;
+    --pink: #D14E5D;
+    --fawn: #724E35;
+    --yellow: #EDE1A5;
+    --h1: 40px;
+    --h2: 30px;
+    --p: 17px;
+    --font: 'Gelasio', serif;
+    --mobilemargin: 16px;
+    --desktopmargin: 100px;
+
+}
+
+
+body {
+    background-color: var(--yellow);
+}
+
+#x{
+    position: absolute;
+    top: 50px;
+    right: 50px;
+}
+
+nav{
+    list-style-type: none;
+    margin-top: 182px;
+    margin-left: var(--mobilemargin);
+}
+
+li{
+    margin-bottom: 20px;
+}
+
+li:last-child {
+    margin-left: 15px;
+    margin-top: -5px;
+    position: absolute;
+    bottom: 20px;
+    right: 50px;
+  }
+
+a{
+    text-decoration: none;
+    font-family: var(--font);
+    font-weight: 400;
+    color: var(--text);
+    font-size: var(--h1);
+}

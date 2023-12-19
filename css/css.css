@@ -1,0 +1,224 @@
+:root {
+  --backgr: #FFFAE9;
+  --text: #2E2618;
+  --darkgr: #203426;
+  --green: #4F6932;
+  --pink: #D14E5D;
+  --fawn: #724E35;
+  --yellow: #EDE1A5;
+  --h1: 40px;
+  --h2: 30px;
+  --h3: 25px;
+  --p: 17px;
+  --font: 'Gelasio', serif;
+  --mobilemargin: 16px;
+  --desktopmargin: 100px;
+  --pline-height: 150%;
+
+}
+
+/* start of navigation bar code */
+
+.moblogo {
+  display: none;
+}
+
+.logo {
+  position: absolute;
+  left: 100px;
+  top: 25px;
+}
+
+.burger {
+  display: none;
+}
+
+.contrast {
+  display: none;
+}
+
+.inner_nav {
+  text-align: right;
+  margin-top: 72px;
+  margin-right: var(--desktopmargin);
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 600;
+  font-family: var(--font);
+  font-size: 20px;
+  color: var(--text);
+  border-bottom: 3px solid transparent;
+}
+
+a.active {
+  border-bottom: 3px solid var(--pink);
+  color: var(--pink);
+}
+
+li:last-child {
+  margin-left: 15px;
+  margin-top: -5px;
+  position: absolute;
+}
+
+li {
+  display: inline-block;
+  text-align: right;
+  margin-left: 69px;
+  /* for space between */
+}
+
+/* navbar code ends here */
+
+#mobilephoto {
+  margin-left: -16px;
+  display: none;
+}
+
+.content {
+  margin-top: 90px;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+body {
+  color: var(--text);
+  background-color: var(--backgr);
+}
+
+h1 {
+  font-weight: bold;
+  font-family: var(--font);
+  font-size: var(--h1);
+}
+
+h2 {
+  font-weight: 600;
+  color: var(--pink);
+}
+
+#mobileh2 {
+  display: none;
+}
+
+p {
+  font-weight: 400;
+  font-family: var(--font);
+  font-size: var(--p);
+  line-height: var(--pline-height);
+  text-align: left;
+}
+
+/* styling of the cafe cards on landing page */
+
+.card img {
+  border-radius: 15px;
+  transition: 0.3s ease-in-out;
+}
+
+.card img:hover {
+  opacity: 0.7;
+}
+
+
+.container {
+  margin-left: var(--desktopmargin);
+  margin-right: var(--desktopmargin);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cards {
+  margin-left: var(--desktopmargin);
+  margin-right: var(--desktopmargin);
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.card {
+  text-align: center;
+}
+
+
+
+/* MOBILE VERSION */
+
+@media (max-width:600px) {
+
+  .content {
+    margin-left: var(--mobilemargin);
+    margin-top: 30px;
+    margin-right: var(--mobilemargin);
+  }
+
+  h1 {
+    font-size: 25px;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .burger {
+    display: block;
+    position: relative;
+    margin-left: var(--mobilemargin);
+    top: -45px;
+  }
+
+  .contrast {
+    display: block;
+    position: absolute;
+    margin-left: var(--mobilemargin);
+    top: 40px;
+    right: 30px;
+  }
+
+  .moblogo {
+    margin-top: 20px;
+    display: block;
+    text-align: center;
+  }
+
+  #mobilephoto {
+    display: block;
+    width: 440px;
+  }
+
+  .container {
+    margin-left: var(--mobilemargin);
+    align-items: center;
+    margin-right: var(--mobilemargin);
+  }
+
+  .cards {
+    display: block;
+    align-items: center;
+    margin-left: var(--mobilemargin);
+    margin-right: var(--mobilemargin);
+  }
+
+  .card img {
+    align-items: center;
+    border-radius: 15px;
+    width: 90%;
+  }
+
+}
