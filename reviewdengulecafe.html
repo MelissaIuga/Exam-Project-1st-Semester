@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Review Den Gule Cafe</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.svg">
+    <link rel="stylesheet" href="css/subpage.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gelasio:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+
+<header>
+
+    <!-- Mobile only elements start here-->
+    <div class="moblogo">
+        <a href="index.html">
+            <img src="images/defaultlogomob.svg" alt="mobilelogo">
+    </div>
+    </a>
+
+    <div class="burger">
+        <a href="burger.html">
+            <img src="images/burger.svg" alt="burgermenu">
+    </div>
+    </a>
+
+    <div class="contrast">
+        <img src="images/contrast.svg" alt="contrast">
+    </div>
+
+
+    <!-- Mobile only elements end here-->
+
+    <nav> <!-- Navigation Bar-->
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/defaultlogo.svg" alt="logo">
+            </a>
+        </div>
+
+        <ul class="inner_nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a class="active" href="dengulecafe.html">Den Gule Cafe</a></li>
+            <li><a href="plukk.html">Plukk</a></li>
+            <li><a href="monk.html">Monk</a></li>
+            <li><a href="404.html">EN/DK</a></li>
+            <li><a href="#"><img src="images/contrast.svg" alt="contrast"></a></li>
+        </ul>
+
+        </div>
+    </nav>
+
+</header>
+
+
+<body>
+
+    <h1>REVIEW DEN GULE CAFE</h1>
+
+    <article class="form">
+        <section class="user">
+            <div><img src="images/userpfp.svg" alt="user profile picture"></div>
+            <div>
+                <p>@USERNAME</p>
+                <p style="opacity: 60%">! Posting publicly</p>
+            </div>
+        </section>
+
+        <div class="stars"><img src="images/5stars.svg" alt="5stars"></div>
+
+        <div class="cafename">
+            <div></div>
+            <h2>How was your experience with<span style="color: #D14E5D;"> Den Gule Cafe </span>?</h2>
+        </div>
+
+        <textarea class="description" name="description" placeholder="Give us some details here!" rows="4"
+            cols="50"></textarea>
+
+        <section class="buttons">
+            <div onclick="history.back()" id="button">
+                <button class="secondary">Cancel</button>
+            </div>
+            <div id="button">
+                <button id="post">Post</button>
+            </div>
+        </section>
+
+    </article>
+
+
+    <div class="popup" id="popup">
+        <div class="popup-inner">
+            <button onclick="history.go(-1)" id="closepopup"><img src="images/x.svg" alt="close"></button>
+            <div id="success"><img src="images/success.svg" alt="success"></div>
+            <h2>Awesome! We got it.<br>
+                Your feedback matters.</h2>
+        </div>
+        <div class="pinkstroke"></div>
+    </div>
+
+    <script src="js/review.js"></script>
+</body>
+
+
+<footer>
+    <section class="footercontent">
+        <h2>Contact</h2>
+        <h2 style="font-weight: 500;">Den Gule Cafe</h2>
+        <h2 style="font-weight: 500;">Tel. 26 71 89 68</h2>
+        <div id="some"> <!-- Social Media Links with target _blank to open in new window-->
+            <a href="https://www.facebook.com/p/Den-Gule-Cafe-100064242962758/" target="_blank"><img src="images/fbicon.svg"
+                    alt="facebook icon"></a>
+            <a img href="https://www.instagram.com/dengulecafe/?hl=en" target="_blank"><img src="images/igicon.svg"
+                    alt="instagram icon"></a>
+        </div>
+    </section>
+
+    <section id="footerlogo">
+        <img src="images/footerlogo.svg" alt="logo">
+    </section>
+</footer>
+</html>
